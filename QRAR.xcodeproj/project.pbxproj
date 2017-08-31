@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		DD65FA091F4B66ED009FA437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65FA081F4B66ED009FA437 /* AppDelegate.swift */; };
 		DD65FA0B1F4B66ED009FA437 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = DD65FA0A1F4B66ED009FA437 /* art.scnassets */; };
-		DD65FA0D1F4B66ED009FA437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65FA0C1F4B66ED009FA437 /* ViewController.swift */; };
-		DD65FA101F4B66ED009FA437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD65FA0E1F4B66ED009FA437 /* Main.storyboard */; };
+		DD65FA0D1F4B66ED009FA437 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65FA0C1F4B66ED009FA437 /* QRViewController.swift */; };
 		DD65FA121F4B66ED009FA437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD65FA111F4B66ED009FA437 /* Assets.xcassets */; };
 		DD65FA151F4B66ED009FA437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD65FA131F4B66ED009FA437 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		DD65FA051F4B66ED009FA437 /* QRAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD65FA081F4B66ED009FA437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD65FA0A1F4B66ED009FA437 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		DD65FA0C1F4B66ED009FA437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD65FA0F1F4B66ED009FA437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD65FA0C1F4B66ED009FA437 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		DD65FA111F4B66ED009FA437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD65FA141F4B66ED009FA437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD65FA161F4B66ED009FA437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +35,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD57A6CF1F4C0D6700E3A267 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				DD65FA0A1F4B66ED009FA437 /* art.scnassets */,
+				DD65FA111F4B66ED009FA437 /* Assets.xcassets */,
+				DD65FA131F4B66ED009FA437 /* LaunchScreen.storyboard */,
+				DD65FA161F4B66ED009FA437 /* Info.plist */,
+			);
+			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
 		DD65F9FC1F4B66EC009FA437 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				DD65FA081F4B66ED009FA437 /* AppDelegate.swift */,
-				DD65FA0A1F4B66ED009FA437 /* art.scnassets */,
-				DD65FA0C1F4B66ED009FA437 /* ViewController.swift */,
-				DD65FA0E1F4B66ED009FA437 /* Main.storyboard */,
-				DD65FA111F4B66ED009FA437 /* Assets.xcassets */,
-				DD65FA131F4B66ED009FA437 /* LaunchScreen.storyboard */,
-				DD65FA161F4B66ED009FA437 /* Info.plist */,
+				DD65FA0C1F4B66ED009FA437 /* QRViewController.swift */,
+				DD57A6CF1F4C0D6700E3A267 /* Supporting FIles */,
 			);
 			path = QRAR;
 			sourceTree = "<group>";
@@ -128,7 +133,6 @@
 				DD65FA0B1F4B66ED009FA437 /* art.scnassets in Resources */,
 				DD65FA151F4B66ED009FA437 /* LaunchScreen.storyboard in Resources */,
 				DD65FA121F4B66ED009FA437 /* Assets.xcassets in Resources */,
-				DD65FA101F4B66ED009FA437 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD65FA0D1F4B66ED009FA437 /* ViewController.swift in Sources */,
+				DD65FA0D1F4B66ED009FA437 /* QRViewController.swift in Sources */,
 				DD65FA091F4B66ED009FA437 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD65FA0E1F4B66ED009FA437 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD65FA0F1F4B66ED009FA437 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD65FA131F4B66ED009FA437 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,7 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ688Q6N5R;
-				INFOPLIST_FILE = QRAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QRAR/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = spaghetticoder.QRAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,7 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ688Q6N5R;
-				INFOPLIST_FILE = QRAR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QRAR/Supporting FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = spaghetticoder.QRAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,6 +316,7 @@
 				DD65FA1B1F4B66ED009FA437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
